@@ -1,0 +1,155 @@
+/* Corpo da página com fundo escuro */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2e2e2e; /* Cor de fundo escura */
+    background-image: url('Imagens/1987871-abstrato-preto-listras-diagonal-fundo-gratis-vetor.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem fixar ao rolar a página */
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+}
+
+/* Centraliza o quiz-container na tela com fundo escuro e bordas vermelhas */
+#quiz-container {
+    width: 100%;
+    /* Largura do container */
+    max-width: 800px;
+    /* Largura máxima */
+    padding: 20px;
+    background-color: #3a3a3a;
+    /* Fundo escuro para o quiz-container */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* Centraliza o texto dentro do quiz-container */
+    margin: 0 auto;
+    /* Garante que o quiz-container seja centralizado */
+    border: 2px solid #d9534f;
+    /* Borda vermelha */
+    position: relative;
+    /* Remove o absolute, centraliza com margens automáticas */
+    z-index: 1;
+}
+
+/* Estilo da imagem da pergunta */
+.question-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do botão de envio com fundo vermelho */
+#submit-answer {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d9534f;
+    /* Cor vermelha para o botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: auto;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Efeito de hover no botão */
+#submit-answer:hover {
+    background-color: #c9302c;
+    /* Cor vermelha mais escura ao passar o mouse */
+}
+
+/* Alinha o progresso à esquerda, com texto mais claro */
+#progress {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+/* Estilo do temporizador com cor vermelha */
+#timer {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d9534f;
+    /* Vermelho no temporizador */
+}
+
+/* Estilo do modal com fundo escuro e detalhes vermelhos */
+.modal-content {
+    background-color: #3a3a3a;
+    /* Fundo escuro do modal */
+    color: #f5f5f5;
+    /* Texto claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Cabeçalho vermelho para erro */
+.modal-header.error {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Cabeçalho verde para sucesso */
+.modal-header.success {
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.modal-footer {
+    background-color: #3a3a3a;
+}
+
+/* Modal de erro com fundo vermelho */
+.modal-content .modal-body.error {
+    background-color: #d9534f;
+    /* Fundo vermelho para erro */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal de sucesso com fundo verde */
+.modal-content .modal-body.success {
+    background-color: #5cb85c;
+    /* Fundo verde para sucesso */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para o número da pergunta (Pergunta 1 de 10) */
+#question-number {
+    font-size: 18px;
+    color: #d9534f;
+    /* Vermelho para "Pergunta 1 de 10" */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para as alternativas (deixe as caixas vermelhas) */
+label {
+    font-size: 16px;
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="radio"] {
+    accent-color: #d9534f;
+    /* Cor do marcador de resposta vermelha */
+}
